@@ -1,20 +1,14 @@
 {
-  "name": "todo",
-  "version": "1.0.0",
-  "description": "Todo App",
-  "main": "script.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DanielMatta/projekt.git"
-  },
-  "author": "CSS Hustlers",
-  "license": "MIT",
-  "workspaces": [
-    "packages/frontend",
-    "packages/backend"
-  ],
+  "name": "todo-fe",
+  "private": true,
+  "version": "0.0.0",
   "scripts": {
-    "be:dev": "npm run dev --workspace=packages/backend",
-    "fe:dev": "npm run dev --workspace=packages/frontend"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.52.1",
+    "vite": "^2.9.9"
   }
 }
